@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Favorite Authors</h1>
+    <h2>Edit this Author</h2>
+    <form (submit)="editCurrent_Author()">
+            Name: <input type="text" name="current_author.name"[(ngModel)]="current_author.name"/>
+            <input type="submit" value="submit"/>
+            
+    </form>
+    <button [routerLink]="['/']">Cancel</button>
+</body>
+</html>
